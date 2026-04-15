@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 
 // ─── MOCK DATA ────────────────────────────────────────────────────────────────
 
@@ -368,8 +368,10 @@ function ProfDetail({ prof, ratings, onBack, onNewRating, theme }) {
               {r.isSelf && (
                 <span style={{
                   fontSize: 11, padding: "1px 8px", borderRadius: 10,
-                  background: isDark ? "#4d3a00" : "#fff3cd", color: isDark ? "#ffc107" : "#856404",
-                  border: `1px solid ${isDark ? "#b38600" : "#ffc107"}`, fontFamily: "'DM Sans', sans-serif",
+                  background: theme.bg === "#121212" ? "#4d3a00" : "#fff3cd", 
+                  color: theme.bg === "#121212" ? "#ffc107" : "#856404",
+                  border: `1px solid ${theme.bg === "#121212" ? "#b38600" : "#ffc107"}`, 
+                  fontFamily: "'DM Sans', sans-serif",
                 }}>Professor (unverified)</span>
               )}
               <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 11, color: theme.subtext }}>
@@ -522,7 +524,6 @@ export default function App() {
             <div style={{ fontSize: 11, color: theme.subtext, textAlign: "right", fontStyle: "italic", maxWidth: 220 }}>
               Community-run. Opinions are student-sourced,<br />not institutional.
             </div>
-            {/* Dark Mode Toggle */}
             <button onClick={() => setIsDark(!isDark)} style={{
               background: theme.cardAlt, border: `1px solid ${theme.border}`, padding: "6px 12px",
               borderRadius: 20, cursor: "pointer", color: theme.text, display: "flex", alignItems: "center", gap: 6,
