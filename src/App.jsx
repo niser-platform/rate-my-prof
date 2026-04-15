@@ -1262,7 +1262,7 @@ export default function App() {
               unverified and community-assessed.
               <br />
               <span style={{ opacity: 0.6, fontSize: 12 }}>
-                Maintained by NISER Gymkhana &amp; Coding Club · Open source
+                Made with 💚 by Ashutosh Nayak · Open source
               </span>
             </div>
           </>
