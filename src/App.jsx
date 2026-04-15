@@ -152,7 +152,7 @@ function RatingForm({ profId, onSubmit, theme }) {
   const [isSelf, setIsSelf] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [hover, setHover] = useState(0);
-  const MIN_CHARS = 150;
+  const MIN_CHARS = 50;
   const valid = score > 0 && comment.trim().length >= MIN_CHARS;
 
   function handleSubmit() {
@@ -200,7 +200,7 @@ function RatingForm({ profId, onSubmit, theme }) {
       <textarea
         value={comment}
         onChange={e => setComment(e.target.value)}
-        placeholder="Share your experience with this professor — teaching style, course load, accessibility, exams... (min 150 characters)"
+        placeholder="Share your experience with this professor — teaching style, course load, accessibility, exams... (min 50 characters)"
         style={{
           width: "100%", minHeight: 100, padding: "12px 14px",
           borderRadius: 7, border: `1.5px solid ${theme.border}`,
