@@ -174,7 +174,7 @@ function RatingForm({ profId, onSubmit, theme }) {
       </div>
 
       <div style={{ display: "flex", gap: 6, marginBottom: 20, flexWrap: "wrap" }}>
-        {.map(n => {
+  {[1,2,3,4,5,6,7,8,9,10].map(n => {
           const active = n <= (hover || score);
           return (
             <button key={n}
