@@ -599,7 +599,7 @@ export default function App() {
               Ratings reflect genuine academic experience — teaching quality, course structure, accessibility.
               Personal attacks or defamatory content will be removed.
               Professors may self-identify in comments; such tags are unverified and community-assessed.<br />
-              <span style={{ opacity: 0.6, fontSize: 12 }}>Made with 💚 · NISER Bhubaneswar</span>
+              <span style={{ opacity: 0.6, fontSize: 12 }}>Made with 💚 at NISER Bhubaneswar</span>
             </div>
           </>
         )}
