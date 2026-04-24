@@ -490,7 +490,7 @@ export default function App() {
               NISER · Rate My Professor
             </div>
             <div style={{ fontSize: 12, color: t.subtext, fontFamily: "'DM Sans', sans-serif", marginTop: 2 }}>
-              Anonymous student reviews · Bhubaneswar
+              Anonymous Student Reviews · Bhubaneswar
             </div>
           </div>
           <DarkToggle isDark={isDark} onToggle={() => setIsDark(!isDark)} t={t} />
@@ -599,7 +599,7 @@ export default function App() {
               Ratings reflect genuine academic experience — teaching quality, course structure, accessibility.
               Personal attacks or defamatory content will be removed.
               Professors may self-identify in comments; such tags are unverified and community-assessed.<br />
-              <span style={{ opacity: 0.6, fontSize: 12 }}>Made with 💚 at · NISER Bhubaneswar</span>
+              <span style={{ opacity: 0.6, fontSize: 12 }}>Made with 💚 · NISER Bhubaneswar</span>
             </div>
           </>
         )}
